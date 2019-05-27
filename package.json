@@ -1,0 +1,19 @@
+{
+  "name": "IntegromatConnector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.1.0",
+    "dbf-congnitoauthorizer": "^1.0.1",
+    "dbf-dbmodels": "^1.0.196",
+    "restify": "^8.3.2",
+    "restify-cors-middleware": "^1.1.1"
+  }
+}
