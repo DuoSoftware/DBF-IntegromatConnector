@@ -46,4 +46,4 @@ server.get('/', (req, res) => { res.end(JSON.stringify({
 server.post('/dbf/api/:version/integromat/webhook/attach', WebhookHandler.attach)
 server.del('/dbf/api/:version/integromat/webhook/:webhookId/detach', WebhookHandler.detach);
 server.get('/dbf/api/:version/integromat/webhooks', authorization(), workspaceAccessCheck(), WebhookHandler.getWebhooks);
-server.get('/dbf/api/:version/integromat/webhook/:webhookId', authorization(), workspaceAccessCheck(), WebhookHandler.getWebhooks);
+server.get('/dbf/api/:version/integromat/webhook/:webhookId', authorization(), workspaceAccessCheck(), WebhookHandler.getWebhook);
