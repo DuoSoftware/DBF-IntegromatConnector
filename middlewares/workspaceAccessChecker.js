@@ -11,7 +11,7 @@ module.exports = function () {
           let project = await ProjectWorker.GetOne({
             tenant: workspaceId,
             company: projectId,
-            users: {$elemMatch: {userId: req.user["cognito:username"]}}
+            users: {$elemMatch: {userId: req.user.sub}}
           });
 
           if (project) {
